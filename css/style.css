@@ -1,0 +1,154 @@
+html,
+body {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-pt-serif: "PT Serif", serif;
+  --black: #000;
+  --gray: #a9a9a9;
+
+  height: 100%;
+}
+
+/* common
+ -------------------------------------- */
+
+.container {
+  max-width: 968px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+/* header
+ -------------------------------------- */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 110px;
+}
+
+.header-title {
+  font-family: var(--font-pt-serif);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--black);
+  letter-spacing: -0.045em;
+}
+
+.header-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-contents__title {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.header-contents__description {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 38px;
+  }
+}
+
+/* main
+ -------------------------------------- */
+
+.main {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.crew-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.crew-list__crew-item {
+  display: flex;
+  gap: 10px;
+}
+
+.crew-list__crew-item:nth-child(3n + 2) {
+  padding-top: 66px;
+}
+
+.crew-list__crew-img {
+  width: 100%;
+  height: auto;
+}
+
+.crew-list__crew-name {
+  margin-top: 15px;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--black);
+}
+
+.crew-list__crew-job {
+  font-family: var(--font-pt-serif);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--black);
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .crew-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .crew-list__crew-item:nth-child(2n) {
+    padding-top: 48px;
+  }
+}
+
+/* footer
+ -------------------------------------- */
+
+.footer {
+  position: sticky;
+  top: 100vh;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.footer-signature {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--gray);
+}

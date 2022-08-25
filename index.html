@@ -6,65 +6,72 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" rel="stylesheet" />
-    <title>Devchallenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;family=PT+Serif:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>My team page</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank" rel="noreferrer">devchallenges.io</a>
-        </h1>
-
-        <p>If you have any questions, don't hesitate to ask on Discord. Here are 7 general steps to complete the challenge:</p>
+    <header class="header container">
+      <h1 class="header-title">The creative crew</h1>
+      <div class="header-contents">
+        <h2 class="header-contents__title">Who we are</h2>
+        <p class="header-contents__description">We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li><b>Step 3:</b> Login to Figma to checkout font, color, spacing,..</li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li><b>Step 7:</b> Share your solution on Discord, Twitter and other platforms to ask for feedback</li>
-      </ul>
-    </div>
+    </header>
+    <main class="main container">
+      <section>
+        <ul class="crew-list">
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo1.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Bill Mahoney</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">Product owner</p>
+          </li>
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo2.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Saba Cabrera</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">Art director</p>
+          </li>
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo3.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Shae Le</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">Tech Lead</p>
+          </li>
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo4.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Skylah Lu</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">UX Designer</p>
+          </li>
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo5.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Griff Richards</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">Developer</p>
+          </li>
+          <li class="crew-list__crew-item">
+            <figure>
+              <img class="crew-list__crew-img" src="./photo6.png" alt="" width="238" height="341" decoding="async" loading="lazy" />
+              <figcaption class="crew-list__crew-name">Stan John</figcaption>
+            </figure>
+            <p class="crew-list__crew-job">Developer</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container">
+      <small class="footer-signature">created by r1cep - devChallenges.io</small>
+    </footer>
   </body>
 </html>
