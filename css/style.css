@@ -88,10 +88,6 @@ body {
   gap: 10px;
 }
 
-.crew-list__crew-item:nth-child(3n + 2) {
-  padding-top: 66px;
-}
-
 .crew-list__crew-img {
   width: 100%;
   height: auto;
@@ -116,6 +112,12 @@ body {
   color: var(--black);
   text-transform: uppercase;
   writing-mode: vertical-rl;
+}
+
+@media (min-width: 769px) {
+  .crew-list__crew-item:nth-child(3n + 2) {
+    padding-top: 66px;
+  }
 }
 
 @media (max-width: 768px) {
